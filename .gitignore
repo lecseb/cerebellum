@@ -110,3 +110,4 @@ autom4te.cache
 *.a
 *.la
 *.lo
+cerebellum-daemon

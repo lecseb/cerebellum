@@ -1,17 +1,17 @@
-# This file is part of mytank-module.
+# This file is part of cerebellum.
 
-# mytank-module is free software: you can redistribute it and/or modify
+# cerebellum is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 
-# mytank-module is distributed in the hope that it will be useful,
+# cerebellum is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 
 # You should have received a copy of the GNU General Public License
-# along with mytank-module.  If not, see <https://www.gnu.org/licenses/>.
+# along with cerebellum.  If not, see <https://www.gnu.org/licenses/>.
 
 AC_INIT([cerebellum], [0.1])
 AM_INIT_AUTOMAKE([subdir-objects foreign])
@@ -30,6 +30,7 @@ AC_HEADER_STDC
 PKG_CHECK_MODULES([avahi_client], [avahi-client])
 PKG_CHECK_MODULES([dbus], [dbus-1])
 PKG_CHECK_MODULES([libcrypto], [libcrypto])
+PKG_CHECK_MODULES([libdaemon], [libdaemon])
 PKG_CHECK_MODULES([libevent], [libevent])
 PKG_CHECK_MODULES([libevent_openssl], [libevent_openssl])
 PKG_CHECK_MODULES([libssl], [libssl])
@@ -62,7 +63,6 @@ AC_CONFIG_FILES([
 	Makefile
 	src/Makefile
 	src/application/Makefile
-	src/core/Makefile
 	src/daemon/Makefile
 ])
 

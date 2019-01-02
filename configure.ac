@@ -67,7 +67,6 @@ AC_CONFIG_FILES([
 ])
 
 AC_OUTPUT
-
 AC_MSG_RESULT([
     $PACKAGE $VERSION
     ==========================
